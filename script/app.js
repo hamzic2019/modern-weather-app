@@ -14,7 +14,7 @@ class Forcast {
         return weather.json();
     }
     async getWeather(city){
-        const completeURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.apiKey}`;
+        const completeURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.apiKey}`;
         const weather = await fetch(completeURL);
         return weather;
     }
